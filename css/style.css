@@ -2,11 +2,19 @@ html,
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    color: #0E0E0E;
+}
+
+.capitalize {
+    text-transform: uppercase;
 }
 
 header {
     display: flex;
     justify-content: space-between;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 nav {
@@ -15,13 +23,24 @@ nav {
 
 nav a {
     margin-right: 2em;
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:visited,
+nav a:active {
+    color: #0E0E0E;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 .hero {
     background-image: url("../images/blog-image-hero.png");
     color: white;
     background-size: cover;
-    /* background-repeat: no-repeat; */
     height: 400px;
     display: flex;
     flex-direction: column;
