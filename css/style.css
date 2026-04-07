@@ -2,8 +2,27 @@ html,
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-family: 'Source Sans Serif',Arial, Helvetica, sans-serif;
     color: #0E0E0E;
+}
+
+h1 {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 32px; 
+    margin: 0;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 24px;  
+    color: #141414;
+    margin: 0;
 }
 
 .capitalize {
@@ -12,28 +31,37 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
     font-weight: bold;
     font-size: 14px;
+    padding: 1em;
+}
+
+.header-icon {
+    height: 1.5em;
+    margin-right: 0.5em;
 }
 
 nav {
-    margin: auto 0;
+    margin: auto 0 auto auto;
 }
 
 nav a {
     margin-right: 2em;
     font-size: 12px;
+}
+
+a {
     font-weight: bold;
     text-decoration: none;
 }
 
-nav a:visited,
-nav a:active {
+a:visited,
+a:active {
     color: #0E0E0E;
 }
 
-nav a:hover {
+a:hover {
     text-decoration: underline;
 }
 
@@ -46,16 +74,106 @@ nav a:hover {
     flex-direction: column;
     justify-content: flex-end;
     align-items: start;
+    padding: 2em;
+}
+
+.hero data {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-weight: normal;
+    font-size: 16px;
 }
 
 article {
     display: flex;
     flex-direction: column;
-    margin: 2em;
+    margin: 3em 2em;
+    gap: 0.5em;
+}
+
+article data {
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+article p {
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+}
+
+article img {
+    margin-bottom: 1em;
+}
+
+.img-my-photo {
+    width: 50%;
+}
+.rescent-post-tittle {
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 2em;
+}
+
+.btn {
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 2em;
 }
 
 footer {
     background-color: #202020;
     color: #ffffff;
     text-align: center;
+    font-size: 12px;
+    padding: 2em;
+}
+
+footer p {
+    font-weight: bold;
+    margin: 0;
+}
+
+.copyright {
+    font-weight: normal;
+}
+
+@media (min-width: 860px) {
+    .rescent-articles{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    } 
+
+    article p,
+    article data,
+    h2, h3, h4 {
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+
+    .img-my-photo {
+        float: left;
+        width: 15%;
+    }
+
+    .article-about-me {
+        flex-direction: row;
+    }
+
+    .aricle-about-me-entry {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aricle-about-me-entry h2,
+    .aricle-about-me-entry p {
+        margin-left: 0.5rem;  
+    }
 }
