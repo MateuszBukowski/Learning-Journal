@@ -4,7 +4,39 @@ body {
     padding: 0;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    margin: auto 0;
+}
+
+nav a {
+    margin-right: 2em;
+}
+
 .hero {
     background-image: url("../images/blog-image-hero.png");
     color: white;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: start;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+}
+
+footer {
+    background-color: #202020;
+    color: #ffffff;
+    text-align: center;
 }
